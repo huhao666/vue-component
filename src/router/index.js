@@ -1,17 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Question from '../views/Question.vue'
 import Classify from '../views/Classify.vue'
 import Action from '../views/Action.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/question',
-    name: 'Question',
-    component: Question
-  },
   {
     path: '/classify',
     name: 'Classify',

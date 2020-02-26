@@ -20,8 +20,7 @@ export default {
   },
   data() {
     return {
-      nav: [
-        { url: '/question', title: '从 Jquery 到组件化需要关注的几个问题' },
+      nav: [ 
         { url: '/classify', title: '组件的分类' },
         { url: '/Action', title: '组件之间通信' }
       ],
