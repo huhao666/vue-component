@@ -68,10 +68,14 @@ export default {
   },
   methods: {
     handleChangeNumber(e) {
+       console.log(e); // eslint-disable-line
+      this.initNumber+=e.num;
       if (e.increase) {
         alert('增加了！')
+        console.log(this.initNumber); // eslint-disable-line
       } else {
         alert('减少了！')
+        console.log(this.initNumber); // eslint-disable-line
       }
     }
   }

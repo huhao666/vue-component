@@ -4,7 +4,8 @@
     <slot></slot>
     <!-- 具名插槽 -->
     <slot name="secondTitle"></slot>
-    <span>我是数字：{{ number }}</span>
+    <span>我是父传入的数字：{{ initNumber }}</span>
+    <span>我是子组件2倍处理过的数字：{{ myNum }}</span>
     <button @click="changeNumber(1)">增加</button>
     <button @click="changeNumber(-1)">减少</button>
   </div>
@@ -21,21 +22,23 @@ export default {
   },
   data() {
     return {
-      number: this.initNumber
+      myNum: this.initNumber*2
     }
   },
   methods: {
     changeNumber(number) {
       if (number >= 0) {
         this.$emit('changeNumber', {
-          increase: true
-        })
+          increase: true,
+          num:number
+        });
       } else {
         this.$emit('changeNumber', {
-          increase: false
+          increase: false,
+          num:number
         })
       }
-      this.number += number
+      this.myNum+=number;
     }
   }
 }
