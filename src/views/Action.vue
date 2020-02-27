@@ -5,13 +5,14 @@
     <hr />
     <h3>三个重要的 api</h3>
     <div>props、event、slot</div>
+    例子如下：
     <NumberInput
       ref="numberInputRef"
       :initNumber="initNumber"
       @changeNumber="handleChangeNumber"
     >
-      <h5 slot="secondTitle">这是一个副标题</h5>
-      <h4>这是一个没有意思的游戏</h4>
+      <h5 slot="secondTitle">具名slot-我也是标题</h5>
+      <h4>一般slot-我是标题</h4>
     </NumberInput>
     <hr />
     {{nav}}
