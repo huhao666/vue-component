@@ -1,4 +1,4 @@
-# component-action2
+# Vue component communication
 
 ## Project setup
 ```
