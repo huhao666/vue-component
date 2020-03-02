@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { eventBus } from '@/store/eventBus'
+import { eventBus } from '../../eventBus'
 export default {
   name: 'A',
   data() {
