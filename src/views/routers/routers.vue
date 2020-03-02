@@ -4,7 +4,10 @@
    <router-link :to="{name: '2rnews'}" class="rlink" :class="{active:selected == 2}" @click.native="tabck(2)">新闻</router-link>
    
     <!-- 二级子路由页面 -->
-    <router-view />
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+    
  </div>
 </template>
 <script>
