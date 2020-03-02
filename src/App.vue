@@ -20,7 +20,8 @@ export default {
   },
   data() {
     return {
-      nav: [ 
+      nav: [
+        { url: '/routers', title: '三层路由' },
         { url: '/classify', title: '组件的分类' },
         { url: '/Action', title: '组件之间通信' }
       ],
